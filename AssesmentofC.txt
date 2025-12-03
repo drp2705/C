@@ -1,0 +1,77 @@
+● Write a program to make multiplication of 2-D Matrix  
+
+
+#include <stdio.h>
+
+// Function to input a matrix
+void inputMatrix(int mat[10][10], int rows, int cols, char name) {
+    printf("\nEnter elements of Matrix %c (%d x %d):\n", name, rows, cols);
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("Enter element [%d][%d]: ", i + 1, j + 1);
+            scanf("%d", &mat[i][j]);
+        }
+    }
+}
+
+// Function to display a matrix
+void displayMatrix(int mat[10][10], int rows, int cols, char name) {
+    printf("\nMatrix %c:\n", name);
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("%5d", mat[i][j]); // proper alignment
+        }
+        printf("\n");
+    }
+}
+
+// Function to multiply two matrices
+void multiplyMatrix(int A[10][10], int B[10][10], int C[10][10],
+                    int r1, int c1, int c2) {
+    for (int i = 0; i < r1; i++) {
+        for (int j = 0; j < c2; j++) {
+            C[i][j] = 0;
+            for (int k = 0; k < c1; k++) {
+                C[i][j] += A[i][k] * B[k][j];
+            }
+        }
+    }
+}
+
+int main() {
+    int A[10][10], B[10][10], C[10][10];
+    int r1, c1, r2, c2;
+
+    printf("========================================\n");
+    printf("     MATRIX MULTIPLICATION PROGRAM\n");
+    printf("========================================\n");
+
+    // Input matrix dimensions
+    printf("\nEnter rows and columns for Matrix A: ");
+    scanf("%d%d", &r1, &c1);
+
+    printf("Enter rows and columns for Matrix B: ");
+    scanf("%d%d", &r2, &c2);
+
+    // Validate matrix dimensions
+    if (c1 != r2) {
+        printf("\n❌ Matrix multiplication not possible!\n");
+        printf("Columns of A must be equal to rows of B.\n");
+        return 0;
+    }
+
+    // Input matrices
+    inputMatrix(A, r1, c1, 'A');
+    inputMatrix(B, r2, c2, 'B');
+
+    // Display matrices
+    displayMatrix(A, r1, c1, 'A');
+    displayMatrix(B, r2, c2, 'B');
+
+    // Multiply and display result
+    multiplyMatrix(A, B, C, r1, c1, c2);
+    displayMatrix(C, r1, c2, 'C');
+
+    printf("\n✅ Matrix multiplication completed successfully!\n");
+    return 0;
+}
