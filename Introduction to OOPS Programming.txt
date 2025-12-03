@@ -1,0 +1,74 @@
+Introduction to C++ – Understanding the Basics of Programming
+
+
+* What is Programming?
+
+--.> Programming is the process of writing instructions for a computer to perform tasks. These instructions are written in a programming language.
+
+
+* Why C++?
+
+-->  C++ is a widely-used, general-purpose programming language known for:
+
+-->  Efficiency and speed
+
+-->  Object-Oriented Programming (OOP) features
+
+-->  Compatibility with hardware-level manipulation
+
+-->  Use in systems, games, and application development
+
+
+* Features of C++:
+
+-->  Combines procedural and object-oriented features
+
+-->  Allows low-level memory manipulation
+
+-->  Supports functions, classes, inheritance, polymorphism
+
+
+* Introduction to C++ Language
+
+-->  C++ was developed by Bjarne Stroustrup as an extension of the C language with object-oriented features.
+
+Basic structure of a C++ program:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hello, World!" << endl;
+    return 0;
+}
+
+
+* POP Vs OOP
+
+* Procedural Oriented Programming (POP)
+
+    Focuses on functions and procedures
+
+    Example: C language
+
+    Code is structured around procedures
+
+* Object-Oriented Programming (OOP)
+
+   Focuses on objects and classes
+
+   Example: C++
+
+   Code is structured around real-world entities
+
+* Advantages of OOP
+
+--> Encapsulation → Data and methods are bundled together
+
+--> Inheritance → Code reuse across classes
+
+--> Polymorphism → One interface, many implementations
+
+--> Abstraction → Hides complexity, shows only essentials
+
+--> Modularity → Code is divided into classes and objects
