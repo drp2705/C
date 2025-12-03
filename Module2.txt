@@ -1,0 +1,87 @@
+							Module 2 – Introduction to Programming
+							Overview of C Programming
+
+THEORY EXERCISE:
+
+Que.. Write an essay covering the history and evolution of C programming. Explain
+      its importance and why it is still used today.
+
+-->  Introduction :
+     C programming language stands as one of the most influential and enduring programming languages in Programming Side.
+     known for its efficiency, flexibility and many more.
+
+--> Evolution :
+    The story of C begins in the early 1970s at Bell Labs (AT&T Bell Telephone Laboratories). Before C, programmers used languages like Assembly
+    and BCPL (Basic Combined Programming Language).
+    In 1967, Martin Richards developed BCPL, which influenced the development of another language called B, created by Ken Thompson in 1969.
+
+Setting Up Environment : 
+
+THEORY EXERCISE:
+
+Que.. Describe the steps to install a C compiler (e.g., GCC) and set up an Integrated Development Environment (IDE) like DevC++, VS Code, or 
+      Codeblocks.
+
+-->  Download MinGW (Minimalist GNU for Windows):
+
+	Go to the MinGW-w64 website:
+	👉 https://www.mingw-w64.org/
+	Or download from SourceForge:
+	👉 https://sourceforge.net/projects/mingw-w64/
+
+	Install MinGW:
+
+	Run the installer.
+
+	Choose architecture: x86_64 (for 64-bit) or i686 (for 32-bit).
+
+	Choose threads: posix, exception: seh (recommended for 64-bit).
+
+	Set installation directory (e.g., C:\mingw-w64).
+
+	Add GCC to System Path:
+
+	Open Environment Variables from Control Panel.
+
+	Edit the Path variable and add:
+	Example:
+	C:\mingw-w64\bin
+
+	This allows you to use GCC commands like gcc from anywhere in the Command Prompt.
+
+	Verify Installation:
+
+	Open Command Prompt and type:
+
+	gcc --version
+
+	If installed correctly, it will show GCC version info
+
+	
+	Installing and Setting Up Visual Studio Code (VS Code)
+	
+	Download and Install VS Code:
+
+	Official site: 👉 https://code.visualstudio.com/
+
+	Download the installer for your OS and install it.
+
+	Install C/C++ Extension:
+
+	Open VS Code.
+
+	Go to Extensions (Ctrl + Shift + X).
+
+	Search for "C/C++" by Microsoft and install it.
+
+	
+LAB EXERCISE:
+	Install a C compiler on your system and configure the IDE. Write your first
+	program to print "Hello, World!" and run it.
+
+-->     #include <stdio.h>
+	int main()
+	{
+    	printf("Hello, World!\n");
+    	return 0;
+	}

@@ -1,0 +1,55 @@
+Q.    What is Program ?
+-- >  A program is a set of instructions that a computer follows in order to perform a particular task.
+
+LAB EXERCISE: Write a simple "Hello World" program in two different programming languages of
+	      your choice. Compare the structure and syntax.
+
+	   ->
+		First we write program in HTML :
+				
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+    		<meta charset="UTF-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<title>First Page</title>
+		</head>
+		<body>
+
+		    ! Hello World !
+
+		</body>
+		</html>
+
+
+	    ->  Second we write program in C :
+
+	        #include<stdio.h>
+		int main()
+		{
+			printf("Hello World");
+
+		return 0;
+		}
+
+THEORY EXERCISE: Explain in your own words what a program is and how it functions.
+	      -> A program is a set of instructions that tells computer what to do.
+	      -> It contains code written in a programming language which may be interpreted, compiled or assembled into machine readable form and then executed.
+
+Q.   What is Programming?
+-->  Programming is set of instructions given to machine.
+
+THEORY EXERCISE: What are the key steps involved in the programming process?
+
+Types of Programming Languages : High level Programming Language 0 - 9
+				 Low Level Programming Language [ Machine Level Programming Language 0 - 1 (Binary)]
+
+
+THEORY EXERCISE: What are the main differences between high-level and low-level 
+		 programming languages?
+	    -->  High level Programming Language [0-9] it is understood by human and
+		 Low Level Programming Language [Machine Level Programming Language 0-1 (Binary)] it is understood by machine 
+
+
+
+
